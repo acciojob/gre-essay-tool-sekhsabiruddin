@@ -8,6 +8,16 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<textarea id="evaluatedText"></textarea>
+    <h3 id="wordCount">0</h3>
+    <script>
+      let textbox = document.getElementById("evaluatedText");
+      let wordCount = document.getElementById("wordCount");
+      
+      textbox.addEventListener("input", function() {
+        wordCount.innerHTML = textbox.value.split(" ").length;
+      });
+    </script>
     <script type="text/javascript" src="./script.js">
 </script>
 
